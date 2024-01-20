@@ -2142,7 +2142,7 @@ div .services-img img {
         
     .col-md-7{
     flex:0 0 auto;
-    width:58.33333333%
+    width:50%
     }
         
     .col-md-6{
@@ -2179,6 +2179,8 @@ div .services-img img {
 .inf-container {
     width: 100%;
   }
+
+
   
   @media (min-width: 768px) {
     .inf-container {
@@ -2765,7 +2767,7 @@ div .services-img img {
     border-radius: 15px;
     overflow: hidden;
     display: block;
-    border-radius: 5%;
+    border-radius: 25px;
     margin: 25px;
     /*extra
  
@@ -3404,18 +3406,82 @@ a {
 
     padding-bottom: 40px;
 }
+.text-contact-container {
+    margin: 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-contact-container-box{
+    width: 100%;
+}
+.text-contact p {
+    text-align: left;
+    padding: 15px 85px 0px 10px;
+    font-size: 16px;
+    color: var(--white);
+    opacity: 0.8;
+    font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
+}
 .text-contact h3 {
+   
     font-size: 38px;
     color: var(--primario);
     font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     text-align: left;
 }
 
+
+
+@media screen and (max-width:765px) {
+    .text-contact-container {
+        margin: 20px 0px 20px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-contact-container-box{
+        width: 100%;
+    }
+    .text-contact p {
+        text-align: left;
+        padding: 15px 5px 0px 10px;
+        font-size: 1.8rem;
+        color: var(--white);
+        opacity: 0.8;
+        font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    
+    }
+    .text-contact h3 {
+        
+        font-size: 3.8rem;
+        color: var(--primario);
+        font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        text-align: left;
+    }
+
+    
+}
+
+
+
+
+
+
+
 .text-contact h5 {
+    display: flex;
+    align-items: center;
+    padding: 0px 25px;
     font-size: 15px;
     font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     text-align: left;
+
+}
+
+.text-contact h5 img {
+    width: 20px;
 
 }
 
@@ -3428,21 +3494,10 @@ a {
 }
 
 .text-contact a {
-    padding: 10px 80px 5px;
-    color: var(--terciario);
+    font-size: 14px;
+    color: var(--white);
 
 }
-
-.text-contact p {
-    text-align: left;
-    padding-top: 15px;
-    font-size: 20px;
-    color: var(--terciario);
-    font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-
-}
-
-
 
 .box-container-contact {
     font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -3465,8 +3520,8 @@ a {
 
 .container-contact {
     position: relative;
-    width: 380px;
-    height: 420px;
+    width: 580px;
+    height: 520px;
     background: #181D31;
     border-radius: 8px;
     overflow: hidden;
@@ -3477,8 +3532,8 @@ a {
     top: -50%;
     left: -50%;
     position: absolute;
-    width: 380px;
-    height: 420px;
+    width: 580px;
+    height: 520px;
     background: linear-gradient(0deg, transparent,
             var(--primario), var(--primario));
     transform-origin: bottom right;
@@ -3490,8 +3545,8 @@ a {
     top: -50%;
     left: -50%;
     position: absolute;
-    width: 380px;
-    height: 420px;
+    width: 580px;
+    height: 520px;
     background: linear-gradient(0deg, transparent,
             var(--primario), var(--primario));
     transform-origin: bottom right;
@@ -3511,8 +3566,9 @@ a {
 }
 
 .form-contact {
+
     position: absolute;
-    background: #181D31;
+    background: #020d18;
     border-radius: 8px;
     inset: 2px;
     z-index: 10;
@@ -3530,7 +3586,7 @@ a {
 
 .inputcontainer {
     position: relative;
-    width: 300px;
+    width: 100%;
     margin-top: 35px;
 }
 
@@ -3599,6 +3655,17 @@ a {
 .links-form-contact a:nth-child(2) {
     color: var(--primario);
 }
+.buttonEnviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+.enviar{
+    cursor: pointer !important;
+
+}
 
 input,
 .button-form [type="submit"] {
@@ -3606,7 +3673,7 @@ input,
     outline: none;
     background: var(--primario);
     padding: 11px 25px;
-    width: 100px;
+    width: 40%;
     margin-top: 10px;
     border-radius: 4px;
     font-weight: 600;
@@ -3820,13 +3887,22 @@ input[type="submit"]:active {
     transform: translateY(25px);
     transition: all 0.4s;
 }
-
-.blog-slider__code {
-    color: #7b7992;
-    margin-bottom: 15px;
-    display: block;
-    font-weight: 500;
+.blog-slider__code{
+    display: none;
 }
+
+@media screen and (max-width: 768px){
+    .blog-slider__code {
+        color: #7b7992;
+        margin-bottom: 15px;
+        display: block;
+        font-weight: 500;
+    }
+}
+    
+
+
+
 
 .blog-slider__title {
     font-size: 24px;
@@ -4249,3 +4325,17 @@ input[type="submit"]:active {
     }
   }
   /*Modales-End*/
+
+  .imgEmail {
+    width: 60px !important;
+    height: 60px!important;
+  }
+
+  .imgEmail2 {
+    width: 120px !important;
+    height: 60px!important;
+  }
+  .point{
+    background: #010000;
+    pointer-events: none;
+  }
